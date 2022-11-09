@@ -22,7 +22,7 @@
 
 <div align="center">
 
-   [![](https://img.shields.io/badge/Website_Demo-5333ed?style=for-the-badge)](https://mayaramein.github.io/html-css-figma-landing-page-iti-course-project/)
+   [![](https://img.shields.io/badge/Website_Demo-5333ed?style=for-the-badge)](https://mayaramein.github.io/tailwindcss-alpinejs-portfolio-website/)
 
 </div>
 
