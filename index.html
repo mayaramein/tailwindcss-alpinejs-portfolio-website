@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayar Amein</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- =========== Google fonts =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- =========== fav-icon =========== -->
+    <link rel="icon" href="./assets/imgs/main-imgs/favicon.ico" type="image/x-icon">
+    
+    <!-- =========== CSS =========== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- =========== Font Awesome =========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--========== UNICONS ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--========== BOXICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body class="bg-gradient-to-t from-lighterColor">
+    <!-- ================ #Scroll up ================= -->
+    <a href="#hero" id="scroll-btn" class="hidden fixed h-11 w-10 text-xl pt-2 rounded-full bg-secondaryColor bottom-5 right-5 text-center text-primaryColor z-50 shadow-lighterColor">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- ================ /Scroll up ================= -->
+    <!-- ================ # Navbar ================= -->
+    <nav id="customNavbar" class="hidden md:block w-screen py-2 bg-primaryColor"> 
+      <div class="flex flex-row text-center justify-between px-12  text-white">
+      <div class="text-white">
+        <i class="fa-solid fa-envelope  px-4 pl-0"></i> mayaramein@outlook.com
+      </div>
+      <div class="flex justify-center text-white">
+        <a href="https://linkedin.com/in/mayaramein" target="_blank">
+          <i class="fa-brands fa-linkedin-in px-3"></i>
+        </a>
+        <a href="https://github.com/mayaramein" target="_blank">
+          <i class="fa-brands fa-github px-3"></i>
+        </a>
+        <a href="https://kaggle.com/mayaramein" target="_blank">
+          <i class="fa-brands fa-kaggle px-3"></i>
+        </a>
+        <a href="https://codepen.io/mayaramein" target="_blank">
+          <i class="fa-brands fa-codepen px-3"></i>
+        </a>
+        <a href="https://www.behance.net/mayaramein" target="_blank">
+          <i class="fa-brands fa-behance px-3"></i>
+        </a>
+        <a href="https://instagram.com/mayaramein" target="_blank">
+          <i class="fa-brands fa-instagram px-3"></i>
+        </a>
+        <a href="https://twitter.com/mayaramein">
+          <i class="fa-brands fa-twitter  px-3"></i>
+        </a>
+      </div>
+      </div>
+    </nav>
+    <nav id="nav-bar" class="fixed w-screen h-24 py-5 z-50 bg-whiteColor bg-opacity-50 backdrop-blur-lg"> 
+      <div class="flex flex-wrap px-12 container items-center justify-between">
+        <div class="pt-2 w-16 h-16 bg-primaryColor rounded-full">
+          <img class="p-3 pt-2.5" src="./assets/imgs/main-imgs/logoIconwhite.png" alt="logo" />
+        </div>
+        <div class="hidden text-primaryColor text-lg mx-auto space-x-4 md:flex">
+          <a href="#hero" class="hover:underline hover:underline-offset-[10px]">Home</a>
+          <a href="#about" class="hover:underline hover:underline-offset-[10px]">About</a>
+          <a href="#skills" class="hover:underline hover:underline-offset-[10px]">Skills</a>
+          <a href="#portfolio" class="hover:underline hover:underline-offset-[10px]">Portfolio</a>
+          <a href="#testimonials" class="hover:underline hover:underline-offset-[10px]">Testimonials</a>
+          <a href="#blog" class="hover:underline hover:underline-offset-[10px]">Blog</a>
+        </div>
+        <div class="hidden md:block">
+          <a href="./assets/pdf/Mayar_Mohsen_FullStack_Web_Developer.pdf" target="_blank" class="border-2 font-bold border-primaryColor  px-8 py-3 mr-4 text-primaryColor text-md bg-white rounded-md hover:underline hover:underline-offset-[8px]">
+            Resume
+          </a>
+          <a href="#contact" target="_blank" class="border-2 font-bold border-primaryColor px-8 py-3 text-primaryColor text-md rounded-md hover:underline bg-white hover:underline-offset-[8px]">
+            Contact
+          </a>
+        </div>
+        <div id="hamburgerMenu" class="z-20 flex flex-col space-y-1 md:hidden cursor-pointer">
+          <span class="w-6 h-0.5 bg-primaryColor"></span>
+          <span class="w-6 h-0.5 bg-primaryColor"></span>
+          <span class="w-6 h-0.5 bg-primaryColor"></span>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden">
+        <div class="absolute z-20 flex flex-col transition-all text-center text-primaryColor py-8 rounded-md space-y-6 font-bold bg-lighterColor sm:w-auto sm:self-center left-6 right-6 drop-shadow-[0_10px_15px_rgba(83,51,232,0.2)]">
+          <a href="#hero" class="hover:underline hover:underline-offset-[10px]">Home</a>
+          <a href="#about" class="hover:underline hover:underline-offset-[10px]">About</a>
+          <a href="#skills" class="hover:underline hover:underline-offset-[10px]">Skills</a>
+          <a href="#portfolio" class="hover:underline hover:underline-offset-[10px]">Portfolio</a>
+          <a href="#testimonials" class="hover:underline hover:underline-offset-[10px]">Testimonials</a>
+          <a href="#blog" class="hover:underline hover:underline-offset-[10px]">Blog</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ================ /Navbar ================= -->
+    <!-- ================ Hero Section ================= -->
+    <section id="hero" class="relative flex flex-col md:flex-row justify-center text-center md:text-left h-screen w-full md:bg-gradient-to-t md:from-lighterColor">
+      <span class="absolute 
+      rounded-md
+      bg-secondaryColor
+      shadow-lg
+      shadow-secondaryColor/50
+      lg:top-[15em]
+      lg:right-[35em]
+      justify-center
+      items-center">
+      <i class="fa-solid 
+                fa-code
+                text-primaryColor
+                p-3
+                text-xl">
+      </i>
+      </span>
+      <span class="absolute 
+     rounded-md
+     bg-secondaryColor
+     shadow-lg
+     shadow-secondaryColor/50
+     top-[30em]
+     right-0
+     md:top-[20em]
+     md:right-[2em]
+     justify-center
+     items-center">
+     <i class="fa-solid 
+               fa-pen-nib
+               text-primaryColor
+               p-3
+               text-xl">
+     </i>
+      </span> 
+      <div class="flex-2 grid grid-col-2 lg:grid-rows-2 px-6">
+        <div class="h-72 text-primaryColor md:pl-48 pt-36 md:pt-72 space-y-4">
+          <h2 class="md:inline text-lg md:text-2xl">Hello, My name is </h2>
+          <h1 class="inline text-3xl md:text-5xl font-bold">Mayar Amein</h1>
+          <div>
+            <h2 class="block md:inline text-lg md:text-2xl">and I'm </h2>
+            <h1 class="block md:inline text-3xl md:text-5xl font-bold" id="text"></h1>
+        </div>
+      </div>
+      <div class="flex flex-col md:block md:pl-24 md:ml-24 mt-[50px] md:mt-24">
+        <a href="#" class="md:mr-[20px] md:mt-[20px] px-12 py-4 text-white text-xl bg-primaryColor rounded-md hover:underline hover:underline-offset-[8px]">
+          Are you Hiring?
+        </a>
+        <a href="#" class="mt-[20px] px-12 py-4 text-white text-xl bg-primaryColor rounded-md hover:underline hover:underline-offset-[8px]">
+          Need a Freelancer?
+        </a>
+      </div>
+    </div>
+      <div class="flex-1 overflow-hidden">   
+        <!-- md:h-5/6 h-45/6 -->
+        <img class="md:absolute bottom-0 right-0 w-3/4 sm:w-[25em] lg:w-[38em]" src="./assets/imgs/main-imgs/homfe-bg.png" alt="hero" >
+      </div>
+    </section>
+    <!-- ================ /Hero Section ================= -->
+    <!-- ================ About Section ================= -->
+    <section id="about" class="w-screen overflow-hidden py-[80px] pb-[120px] lg:pt-[120px] lg:pb-[60px]">
+      <div class="">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+            <span class="text-blackColor mb-2 block text-lg font-semibold">
+              About
+            </span>
+            <h2
+              class="text-primaryColor mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+            >
+            Get To Know Me
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class=" text-primaryColor py-8 flex flex-wrap">
+      <div class="flex flex-col mx-auto items-start md:flex-row">
+        
+        <div class="">
+
+          <div class="w-full h-full">
+
+            <div class="relative wrap overflow-hidden p-10 h-full">
+              
+              <div class="flex justify-center">
+                <div class="w-24 h-24 bg-white border-2 border-secondaryColor rounded-full">
+                  <img class="p-3" src="./assets/imgs/main-imgs/logo-icon.png" alt="logo" />
+                </div>
+              </div>
+              <div class="border-2-2 border-yellow-555 absolute h-full border"
+                style="right: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
+              <span class="border-2-2 border-yellow-555 absolute h-full border"
+                style="left: 50%; border: 2px solid #FFC100; border-radius: 1%;"></span>
+             
+              <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="order-1  w-5/12 px-1 py-4 text-left">
+                  <p class="mb-3 text-base text-primabg-primaryColor">May 2021 - Jun 2022</p>
+                  <h4 class="mb-3 font-bold text-lg md:text-2xl">Lorem Ipsum is simply dummy text</h4>
+                  <p class="text-sm md:text-base leading-snug text-primaryColor text-opacity-100">
+                    Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text
+                  </p>
+                </div>
+              </div>
+              <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="order-1 w-5/12 px-1 py-4 text-right">
+                  <p class="mb-3 text-base text-primabg-primaryColor"> Mar 2020 - Apr 2021 </p>
+                  <h4 class="mb-3 font-bold text-lg md:text-2xl">Lorem Ipsum is simply dummy text</h4>
+                  <p class="text-sm md:text-base leading-snug text-primaryColor text-opacity-100">
+                    Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text</p>
+                </div>
+              </div>
+
+              <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+
+                <div class="order-1  w-5/12 px-1 py-4">
+                  <p class="mb-3 text-base text-primabg-primaryColor">Jan 2020 - Dec 2020</p>
+                  <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left">Lorem Ipsum is simply dummy text</h4>
+                  <p class="text-sm md:text-base leading-snug text-primaryColor text-opacity-100">
+                    Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center text-primaryColor">
+              <img src="./assets/imgs/main-imgs/profile-picture.png" class="w-24 h-24 p-1 border-secondaryColor border-2 rounded-full" alt="me">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /About Section ================= -->
+    <!-- ================ Skills Section ================= -->
+    <section id="skills" class="w-screen overflow-hidden py-[80px] pb-[120px] lg:pt-[60px] lg:pb-[120px]">
+      <div class="-mx-4">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+            <span class="text-blackColor mb-2 block text-lg font-semibold">
+              Skills
+            </span>
+            <h2
+              class="text-primaryColor mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+            >
+            I Can Deal With
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="md:flex mt-20 text-center md:ml-[100px]">
+        <div class="relative flex flex-col md:flex-row space-x-[5em] text-center">
+            <div class="flex items-center relative pb-5 justify-center">
+                <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                    <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                    <div class="absolute font-bold text-primaryColor mt-5">Languages</div>
+                    <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+                </div>
+                <div class="pt-5">
+                    <div class="flex mb-4 space-x-16">
+                        <div class="w-18 h-18">
+                            <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                        </div>
+                    </div>
+                    <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                  </div>
+              </div>
+                </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">Frontend</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">Backend</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">Database</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">Frameworks</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">UI/UX</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">Tools</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+            <div class="flex items-center relative pb-5 justify-center">
+              <div class="border-b-2 border-primaryColor absolute w-full bottom-2 z-10 ">
+                  <i class="fas fa-circle -top-1 -left-[1em] text-[10px] absolute text-primaryColor"></i>
+                  <div class="absolute font-bold text-primaryColor mt-5">Graphics</div>
+                  <i class="fas fa-circle -top-1 -right-[1em] text-[10px]  absolute text-primaryColor"></i>
+              </div>
+              <div class="pt-5">
+                  <div class="flex mb-4 space-x-16">
+                      <div class="w-18 h-18">
+                          <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c-sharp-programming-language-icon.png" alt="csharp">
+                      </div>
+                  </div>
+                  <div class="flex mb-4 space-x-16">
+                    <div class="w-18 h-18">
+                        <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/python.png" alt="python">
+                    </div>
+                </div>
+                <div class="flex mb-4 space-x-16">
+                  <div class="w-18 h-18">
+                      <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c.png" alt="c">
+                  </div>
+              </div>
+              <div class="flex mb-4 space-x-16">
+                <div class="w-18 h-18">
+                    <img class="rounded-full border-2 p-2 border-secondaryColor" src="./assets/imgs/skills/c++.png" alt="c++">
+                </div>
+            </div>
+              </div>                     
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /Skills Section ================= -->
+    <!-- ================ Projects Section ================= -->
+    <section
+          x-data="
+            {
+              showCards: 'all',
+              activeClasses: 'bg-primaryColor text-white',
+              inactiveClasses: 'text-primaryColor over:bg-primaryColor',
+            }
+          "
+      class="w-screen overflow-hidden lg:pt-[60px] lg:pb-[90px]"
+      id="portfolio"
+      >
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span class="text-blackColor mb-2 block text-lg font-semibold">
+                Portfolio
+              </span>
+              <h2
+                class="text-primaryColor mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+              >
+                Recent Projects
+              </h2>
+              
+            </div>
+          </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap justify-center">
+          <div class="w-full px-4">
+            <ul class="mb-12 flex flex-wrap justify-center space-x-1">
+              <li class="mb-1">
+                <button
+                  @click="showCards = 'all' "
+                  :class="showCards == 'all' ? activeClasses : inactiveClasses "
+                  class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                >
+                  All Projects
+                </button>
+              </li>
+              <li class="mb-1">
+                <button
+                  @click="showCards = 'branding' "
+                  :class="showCards == 'branding' ? activeClasses : inactiveClasses "
+                  class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                >
+                  Branding
+                </button>
+              </li>
+              <li class="mb-1">
+                <button
+                  @click="showCards = 'design' "
+                  :class="showCards == 'design' ? activeClasses : inactiveClasses "
+                  class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                >
+                  Design
+                </button>
+              </li>
+              <li class="mb-1">
+                <button
+                  @click="showCards = 'development' "
+                  :class="showCards == 'development' ? activeClasses : inactiveClasses "
+                  class="inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8"
+                >
+                  Development
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap px-12">
+          <div
+            :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3"
+          >
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  src="./assets/imgs/projects/43.png"
+                  alt="portfolio"
+                  class="w-full"
+                />
+              </div>
+              <div
+                class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg"
+              >
+                <span class="text-primaryColor mb-2 block text-sm font-semibold">
+                  Branding
+                </span>
+                <h3 class="text-primaryColor mb-4 text-xl font-bold">Full Identity Design</h3>
+                <a
+                  href="javascript:void(0)"
+                  class=" hover:bg-primaryColor hover:border-l-primaryColor inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-primaryColor"
+                >
+                  View Details
+                </a>
+                <ul class="flex justify-center items-center text-2xl py-2">
+                  
+                  <li class="p-2 text-primaryColor"><i class="fa-solid fa-puzzle-piece"></i></li>
+                </ul>
+                <ul class="flex justify-center items-center">
+                  
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    Adobe Illustrator
+                  </span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3"
+          >
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  src="./assets/imgs/projects/1111111.png"
+                  alt="portfolio"
+                  class="w-full"
+                />
+              </div>
+              <div
+                class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg"
+              >
+                <span class="text-primaryColor mb-2 block text-sm font-semibold">
+                  Branding
+                </span>
+                <h3 class="text-primaryColor mb-4 text-xl font-bold">Web Branding Design</h3>
+                <a
+                  href="javascript:void(0)"
+                  class=" hover:bg-primaryColor hover:border-l-primaryColor inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-primaryColor"
+                >
+                  View Details
+                </a>
+                <ul class="flex justify-center items-center text-2xl py-2">
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-html5"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-css3"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-solid fa-puzzle-piece"></i></li>
+                  
+                </ul>
+                <ul class="flex justify-center items-center">
+                  
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    Adobe XD
+                  </span></li>
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    HTML
+                  </span></li>
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    Adobe Photoshop
+                  </span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3"
+          >
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  src="./assets/imgs/projects/1111.png"
+                  alt="portfolio"
+                  class="w-full"
+                />
+              </div>
+              <div
+                class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg"
+              >
+                <span class="text-primaryColor mb-2 block text-sm font-semibold">
+                  UI Development
+                </span>
+                <h3 class="text-primaryColor mb-4 text-xl font-bold">Company Website</h3>
+                <a
+                  href="javascript:void(0)"
+                  class=" hover:bg-primaryColor hover:border-l-primaryColor inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-primaryColor"
+                >
+                  View Details
+                </a>
+                <ul class="flex justify-center items-center text-2xl py-2">
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-html5"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-css3"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-square-js"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-solid fa-file-code"></i></li>
+                  
+                </ul>
+                <ul class="flex justify-center items-center">
+                  
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    HTML5
+                  </span></li>
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    CSS3
+                  </span></li>
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    Javascript
+                  </span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3"
+          >
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  src="./assets/imgs/projects/111.png"
+                  alt="portfolio"
+                  class="w-full"
+                />
+              </div>
+              <div
+                class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg"
+              >
+                <span class="text-primaryColor mb-2 block text-sm font-semibold">
+                  Full stack Website
+                </span>
+                <h3 class="text-primaryColor mb-4 text-xl font-bold">Ecommerce Website</h3>
+                <a
+                  href="javascript:void(0)"
+                  class=" hover:bg-primaryColor hover:border-l-primaryColor inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-primaryColor"
+                >
+                  View Details
+                </a>
+                <ul class="flex justify-center items-center text-2xl py-2">
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-html5"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-css3"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-brands fa-aws"></i></li>
+                  <li class="p-2 text-primaryColor"><i class="fa-solid fa-code"></i></li>
+                  
+                </ul>
+                <ul class="flex justify-center items-center">
+                  
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    Web Api
+                  </span></li>
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    .NET 
+                  </span></li>
+                  <li class="p-2 text-primaryColor"><span class="border-primary bg-primary text-primary m-2 inline-block rounded-full border bg-opacity-5 py-1 px-3 text-sm font-semibold">
+                    Angular
+                  </span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /Projects Section ================= -->
+    <!-- ================ Testimonils Section ================= -->
+    <section id="testimonials" class="w-screen overflow-hidden px-[50px] lg:pt-[60px] pb-[120px]">
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span class="text-blackColor mb-2 block text-lg font-semibold">
+                Testimonials
+              </span>
+              <h2
+                class="text-primaryColor mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+              >
+                Clients Feedback
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          x-data="
+            {
+            slides: ['1','2','3','4'],
+            activeSlide: 1,
+            activeButton: 'w-[30px]',
+            button: 'w-[10px]'
+            }
+            "
+        >
+          <div class="relative flex justify-center">
+            <div
+              class="relative w-full md:w-11/12 lg:w-10/12 xl:w-8/12 xl:pb-0"
+            >
+              <div
+                class="snap xs:max-w-[368px] flex-no-wrap mx-auto flex h-auto w-full max-w-[300px] overflow-hidden transition-all sm:max-w-[508px] md:max-w-[630px] lg:max-w-[738px] 2xl:max-w-[850px]"
+                x-ref="carousel"
+              >
+                <div
+                  class="xs:min-w-[368px] mx-auto h-full min-w-[300px] sm:min-w-[508px] sm:p-6 md:min-w-[630px] lg:min-w-[738px] 2xl:min-w-[850px]"
+                >
+                  <div class="w-full items-center md:flex">
+                    
+                    <div class="w-full">
+                      <div>
+                        <p
+                          class=" mb-11 text-base font-medium italic sm:text-lg"
+                        >
+                        Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text
+                        </p>
+                        <h4 class="text-dark text-xl font-semibold">
+                          Lorem Ipsum 0
+                        </h4>
+                        <p class=" text-base">
+                          Lorem Ipsum is simply dummy text
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="xs:min-w-[368px] mx-auto h-full min-w-[300px] sm:min-w-[508px] sm:p-6 md:min-w-[630px] lg:min-w-[738px] 2xl:min-w-[850px]"
+                >
+                  <div class="w-full items-center md:flex">
+                    
+                    <div class="w-full">
+                      <div>
+                        <p
+                          class=" mb-11 text-base font-medium italic sm:text-lg"
+                        >
+                          Velit aseewqeqwwest sit voluptas eum sapiente omnis! Porro, impedit
+                          minus quam reprehenderit tempore sint quaerat id! Mollitia
+                          perspiciatis est asperiores hghgcommodi labore!
+                        </p>
+                        <h4 class="text-dark text-xl font-semibold">
+                          Lorem Ipsum 2
+                        </h4>
+                        <p class="text-body-color text-base">
+                          Lorem Ipsum is simply dummy text
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="xs:min-w-[368px] mx-auto h-full min-w-[300px] sm:min-w-[508px] sm:p-6 md:min-w-[630px] lg:min-w-[738px] 2xl:min-w-[850px]"
+                >
+                  <div class="w-full items-center md:flex">
+                   
+                    <div class="w-full">
+                      <div>
+                        
+                        <p
+                          class="text-body-color mb-11 text-base font-medium italic sm:text-lg"
+                        >
+                        Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text</p>
+                        <h4 class="text-dark text-xl font-semibold">
+                          Lorem Ipsum  4
+                        </h4>
+                        <p class="text-body-color text-base">
+                          Lorem Ipsum is simply dummy text
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="xs:min-w-[368px] mx-auto h-full min-w-[300px] sm:min-w-[508px] sm:p-6 md:min-w-[630px] lg:min-w-[738px] 2xl:min-w-[850px]"
+                >
+                  <div class="w-full items-center md:flex">
+                   
+                    <div class="w-full">
+                      <div>
+                        
+                        <p
+                          class="text-body-color mb-11 text-base font-medium italic sm:text-lg"
+                        >
+                        Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy textLorem Ipsum is simply dummy text
+                        </p>
+                        <h4 class="text-dark text-xl font-semibold">
+                          Lorem Ipsum 1
+                        </h4>
+                        <p class="text-body-color text-base">
+                          Lorem Ipsum is simply dummy text
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute left-0 right-0 bottom-0 flex items-center justify-center lg:pl-[120px] 2xl:pl-0"
+              >
+                <button
+                  class="text-primaryColor shadow-input mx-1 flex h-12 w-12 items-center justify-center rounded-full bg-white"
+                  @click="$refs.carousel.scrollLeft = $refs.carousel.scrollLeft - ($refs.carousel.scrollWidth / slides.length); activeSlide -= 1"
+                >
+                  <svg
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    class="fill-current"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.24264 11.8033L0.46967 7.03037C0.176777 6.73748 0.176777 6.2626 0.46967 5.96971L5.24264 1.19674C5.53553 0.903845 6.01041 0.903845 6.3033 1.19674C6.59619 1.48963 6.59619 1.96451 6.3033 2.2574L2.81066 5.75004H14C14.4142 5.75004 14.75 6.08583 14.75 6.50004C14.75 6.91425 14.4142 7.25004 14 7.25004H2.81066L6.3033 10.7427C6.59619 11.0356 6.59619 11.5104 6.3033 11.8033C6.01041 12.0962 5.53553 12.0962 5.24264 11.8033Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="text-primaryColor shadow-input mx-1 flex h-12 w-12 items-center justify-center rounded-full bg-white "
+                  @click="$refs.carousel.scrollLeft = $refs.carousel.scrollLeft + ($refs.carousel.scrollWidth / slides.length); activeSlide += 1"
+                >
+                  <svg
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    class="fill-current"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.75736 11.8033L14.5303 7.03037C14.8232 6.73748 14.8232 6.2626 14.5303 5.96971L9.75736 1.19674C9.46447 0.903845 8.98959 0.903845 8.6967 1.19674C8.40381 1.48963 8.40381 1.96451 8.6967 2.2574L12.1893 5.75004H1C0.585786 5.75004 0.25 6.08583 0.25 6.50004C0.25 6.91425 0.585786 7.25004 1 7.25004H12.1893L8.6967 10.7427C8.40381 11.0356 8.40381 11.5104 8.6967 11.8033C8.98959 12.0962 9.46447 12.0962 9.75736 11.8033Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /Testimonils Section ================= -->
+    <!-- ================ Blog Section ================= -->
+    <section id="blog" class="w-screen overflow-hidden lg:px-[60px]">
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span class="text-blackColor mb-2 block text-lg font-semibold">
+                Blog
+              </span>
+              <h2
+                class="text-primaryColor mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+              >
+                Latest Articles
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap p-4">
+          <div class="w-full px-3 md:w-1/2 lg:w-1/3">
+            <div class="bg-white rounded mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded h-72">
+                <img
+                  src="./assets/imgs/articles/sw.png"
+                  alt="image"
+                  class="w-full h-auto"
+                />
+              </div>
+              <div>
+                <span
+                  class="bg-secondaryColor m-4 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-primaryColor"
+                >
+                  Dec 01, 2022
+                </span>
+                <h3>
+                  <a
+                    href="#"
+                    class="text-dark p-4 hover:text-primary inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Lorem Ipsum is simply dummy text
+                  </a>
+                </h3>
+                <p class="text-base px-4">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <a href="#" target="_blank" class="m-4 mb-5 inline-block px-8 py-3 text-white text-md rounded-md hover:underline bg-primaryColor hover:underline-offset-[8px]">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-3 md:w-1/2 lg:w-1/3">
+            <div class="bg-white rounded mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded h-72">
+                <img
+                  src="./assets/imgs/articles/111111.png"
+                  alt="image"
+                  class="w-full h-auto"
+                />
+              </div>
+              <div>
+                <span
+                  class="bg-secondaryColor m-4 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-primaryColor"
+                >
+                  Dec 01, 2022
+                </span>
+                <h3>
+                  <a
+                    href="#"
+                    class="text-dark p-4 hover:text-primary inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Lorem Ipsum is simply dummy text
+                  </a>
+                </h3>
+                <p class="text-base px-4">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <a href="#" target="_blank" class="m-4 mb-5 inline-block px-8 py-3 text-white text-md rounded-md hover:underline bg-primaryColor hover:underline-offset-[8px]">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-3 md:w-1/2 lg:w-1/3">
+            <div class="bg-white rounded mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded h-72">
+                <img
+                  src="./assets/imgs/articles/11.png"
+                  alt="image"
+                  class="w-full h-auto"
+                />
+              </div>
+              <div>
+                <span
+                  class="bg-secondaryColor m-4 mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-primaryColor"
+                >
+                  Dec 01, 2022
+                </span>
+                <h3>
+                  <a
+                    href="#"
+                    class="text-dark p-4 hover:text-primary inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                  Lorem Ipsum is simply dummy text
+                  </a>
+                </h3>
+                <p class="text-base px-4">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <a href="#" target="_blank" class="m-4 mb-5 inline-block px-8 py-3 text-white text-md rounded-md hover:underline bg-primaryColor hover:underline-offset-[8px]">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /Blog Section ================= -->
+    <!-- ================ Subscribe Section ================= -->
+    <section class="py-20 lg:pb-[120px]">
+      <div class="container mx-auto p-12">
+        <div
+          class="bg-primaryColor relative z-10 overflow-hidden rounded py-12 px-8 md:p-[70px]"
+        >
+          <div class="-mx-4 flex flex-wrap items-center">
+            <div class="w-full px-4 lg:w-1/2">
+              <span class="mb-2 text-base font-semibold text-white">
+                Subscribe to blog
+              </span>
+              <h2
+                class="mb-6 text-3xl font-bold leading-tight text-white sm:mb-8 sm:text-[38px] lg:mb-0"
+              >
+              Get latest articles <br class="xs:block hidden" />
+                Today
+              </h2>
+            </div>
+            <div class="w-full px-4 lg:w-1/2">
+              <div class="flex flex-wrap lg:justify-end">
+                <input placeholder="Write Your Email"
+                  class="flex-1 my-1 mr-4 inline-block rounded bg-white py-4 px-6 text-base font-medium transition  lg:px-[6em]"
+                >
+                 
+                <a
+                  href="javascript:void(0)"
+                  class="flex-2 my-1 inline-block rounded bg-white py-4 px-6 text-base font-medium text-primaryColor transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9"
+                >
+                  Subscribe
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- ================ /Subscribe Section ================= -->
+    <!-- ================ Contact Section ================= -->
+     <section id="contact" class="w-screen relative z-10 overflow-hidden py-20 lg:py-[60px]">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+            <span class="text-blackColor mb-2 block text-lg font-semibold">
+              Contact
+            </span>
+            <h2
+              class="text-primaryColor mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
+            >
+            Have a Project ?
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container px-12 mx-auto">
+        <div class="-mx-4 flex flex-wrap lg:justify-between">
+          <div class="w-full px-4 lg:w-2/3 xl:w-5/12">
+            <div class="mb-12 lg:mb-0">
+              <h2
+                class="text-primaryColor mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+              >
+                Lets discuss your next success
+              </h2>
+              <div class="mb-8 flex w-full max-w-[370px]">
+                <div
+                  class="r-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden sm:h-[70px] sm:max-w-[70px]"
+                >
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-dark mb-1 text-xl font-bold">Phone Number</h4>
+                  <p class="text-body-color text-base">(+20) 102 954 5294</p>
+                </div>
+              </div>
+              <div class="mb-8 flex w-full max-w-[370px]">
+                <div
+                  class="r-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden sm:h-[70px] sm:max-w-[70px]"
+                >
+                <i class="fa-solid fa-envelope text-xl"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-dark mb-1 text-xl font-bold">Email Address</h4>
+                  <p class="text-body-color text-base">mayaramein@outlook.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full mr-3 px-4 lg:w-1/3 xl:w-6/12">
+            <div class="relative rounded-lg bg-white p-8 shadow-lg shadow-primaryColor/15 sm:p-12">
+              <form>
+                <div class="mb-6 bg-lighterColor border  rounded-md">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full rounded  py-3 px-[14px] text-base outline-none"
+                  />
+                </div>
+                <div class="mb-6 border rounded-md">
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full rounded  py-3 px-[14px] text-base outline-none"
+                  />
+                </div>
+                <div class="mb-6 border rounded-md">
+                  <input
+                    type="text"
+                    placeholder="Your Phone"
+                    class="w-full rounded  py-3 px-[14px] text-base outline-none"
+                  />
+                </div>
+                <div class="mb-6 border  rounded-md">
+                  <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    class="w-full resize-none rounded  py-3 px-[14px] text-base outline-none"
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="bg-primaryColor w-full rounded border p-3 text-white transition hover:bg-opacity-90"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ /Contact Section ================= -->
+    <!-- ================ Footer Section ================= -->
+      <footer class="flex flex-col text-center justify-center  text-white mt-9 py-12">
+          <div class="flex justify-center text-primaryColor">
+            <img src="./assets/imgs/main-imgs/profile-picture.png" class="w-24 h-24 p-1 border-secondaryColor border-2 rounded-full" alt="me">
+          </div>
+          <div class="flex justify-center text-primaryColor text-lg p-4">
+            <a href="https://linkedin.com/in/mayaramein" target="_blank" class="mr-9">
+              <i class="fa-brands fa-linkedin-in hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+            <a href="https://github.com/mayaramein" target="_blank" class="mr-9">
+              <i class="fa-brands fa-github hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+            <a href="https://kaggle.com/mayaramein" target="_blank" class="mr-9">
+              <i class="fa-brands fa-kaggle hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+            <a href="https://codepen.io/mayaramein" target="_blank" class="mr-9">
+              <i class="fa-brands fa-codepen hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+            <a href="https://www.behance.net/mayaramein" target="_blank" class="mr-9">
+              <i class="fa-brands fa-behance hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+            <a href="https://instagram.com/mayaramein" target="_blank" class="mr-9">
+              <i class="fa-brands fa-instagram hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+            <a href="https://twitter.com/mayaramein" class="mr-9">
+              <i class="fa-brands fa-twitter  hover:border-2 hover:border-secondaryColor p-3 rounded-full"></i>
+            </a>
+          </div>
+        <div class="p-3 text-primaryColor">
+          © 2023 Coded by <i class="fa-solid fa-laptop-code"></i> @mayaramein
+        </div>
+      </footer>  
+    <!-- ================ /Footer Section ================= -->
+
+    
+    <!-- =========== JS =========== -->
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
