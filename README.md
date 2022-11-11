@@ -8,7 +8,7 @@
 <p> Portfolio website using <p>
 
   
-  ![](https://img.shields.io/badge/HTML-b4272d?style=flat&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS-b4272d?style=flat&logo=css3&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-5333ed?style=flat&logo=tailwindcss&logoColor=white) ![](https://img.shields.io/badge/Alpine_JS-5333ed?style=flat&logo=alpinejs&logoColor=white) ![](https://img.shields.io/badge/Visual_Studio_Code-5333ed?style=flat&logo=visual%20studio%20code&logoColor=white)
+  ![](https://img.shields.io/badge/HTML-5333ed?style=flat&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS-5333ed?style=flat&logo=css3&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-5333ed?style=flat&logo=tailwindcss&logoColor=white) ![](https://img.shields.io/badge/Alpine_JS-5333ed?style=flat&logo=alpinejs&logoColor=white) ![](https://img.shields.io/badge/Visual_Studio_Code-5333ed?style=flat&logo=visual%20studio%20code&logoColor=white)
 
   </div>
 
